@@ -10,7 +10,7 @@ const messageTwo = document.querySelector('#message-2')
     messageTwo.textContent=''
     
     async function API(url){
-        const baseUrl = 'http://localhost:3000/weather'
+        const baseUrl = '/weather'
         const response = await fetch(baseUrl+url)
         const data = await response.json()
         return data
